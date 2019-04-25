@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Character Creation</title>
+    </head>
+    <body>
+        <h1>Player Name:</h1>
+        <input id="player_name" type="text" name="player_name" placeholder="Enter Name Here">
+        <br>
+        <h1>Pilot Skill:</h1>
+        <input id="pilot_skill" type="number" name="pilot_skill" value="">
+        <br>
+        <h1>Fighter Skill:</h1>
+        <input id="fighter_skill" type="number" name="fighter_skill" value="">
+        <br>
+        <h1>Trader Skill:</h1>
+        <input id="trader_skill" type="number" name="trader_skill" value="">
+        <br>
+        <h1>Engineer Skill:</h1>
+        <input id="engineer_skill" type="number" name="engineer_skill" value="">
+        <br>
+        <h2>Ship Type: Gnat (Starter ship)</h2>
+        <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
+
+        <script>
+            function createPlayer() {
+                var name = document.getElementById("player_name").value;
+                var pilotSkill = parseInt(document.getElementById("pilot_skill").value);
+                var fighterSkill = parseInt(document.getElementById("fighter_skill").value);
+                var traderSkill = parseInt(document.getElementById("trader_skill").value);
+                var engineerSkill = parseInt(document.getElementById("engineer_skill").value);
+                if (name == "") {
+                    window.alert("You must input a name.")
+                    return;
+                }
+                if (isNaN(pilotSkill) || isNaN(fighterSkill) || isNaN(traderSkill) || isNaN(pilotSkill)) {
+                    window.alert("You must input a value for each skill.");
+                    return;
+                }
+                var total = pilotSkill+fighterSkill+engineerSkill+traderSkill;
+                if (total > 16) {
+                    window.alert("You've allocated too many points! Make sure that your skills total to 16.");
+                    return;
+                } else if (total < 16) {
+                    window.alert("You have not allocated all of your points! Make sure that your skills total to 16.");
+                    return;
+                }
+
+                var player = {
+                    name: name,
+                    pilotSkill: pilotSkill,
+                    fighterSkill: fighterSkill,
+                    traderSkill: traderSkill,
+                    engineerSkill: engineerSkill
+                }
+                localStorage.setItem('player', JSON.stringify(player));
+                window.location.replace("startScreen.html");
+                return;
+            }
+        </script>
+    </body>
+</html>
