@@ -22,6 +22,9 @@
         <p>Engineer Skill: </p>
         <p id="engineer"></p>
         <br>
+        <p>Difficulty: </p>
+        <p id="difficulty"></p>
+        <br>
         <p>Ship: Gnat</p>
         <script>
             var player = JSON.parse(localStorage.getItem('player'));
@@ -30,11 +33,13 @@
             var fighter = player.fighterSkill;
             var trader = player.traderSkill;
             var engineer = player.engineerSkill;
+            var difficulty = player.diff;
             document.getElementById("name").innerHTML = name;
             document.getElementById("pilot").innerHTML = pilot;
             document.getElementById("fighter").innerHTML = fighter;
             document.getElementById("trader").innerHTML = trader;
             document.getElementById("engineer").innerHTML = engineer;
+            document.getElementById("difficulty").innerHTML = difficulty;
         </script>
     </body>
 </html>
