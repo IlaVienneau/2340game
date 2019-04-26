@@ -29,30 +29,11 @@
                 <p id="difficulty"></p>
                 <br>
                 <p>Ship: Gnat</p>
+                <br>
+                <button onclick="nextPage()">Create Universe</a>
             </div>
         </div>
-        <h1>Player Created!</h1>
-        <br>
-        <p>Player Name: </p>
-        <p id="name"></p>
-        <br>
-        <p>Pilot Skill: </p>
-        <p id="pilot"></p>
-        <br>
-        <p>Fighter Skill: </p>
-        <p id="fighter"></p>
-        <br>
-        <p>Trader Skill: </p>
-        <p id="trader"></p>
-        <br>
-        <p>Engineer Skill: </p>
-        <p id="engineer"></p>
-        <br>
-        <br>
-        <p>Difficulty: </p>
-        <p id="difficulty"></p>
-        <br>
-        <p>Ship: Gnat</p>
+
         <script>
             var player = JSON.parse(localStorage.getItem('player'));
             var name = player.name;
@@ -67,7 +48,9 @@
             document.getElementById("trader").innerHTML = trader;
             document.getElementById("engineer").innerHTML = engineer;
             document.getElementById("difficulty").innerHTML = difficulty;
+            function nextPage() {
+                window.location.replace("universe.html");
+            }
         </script>
-        <a href="universe.html">Create Universe</a>
     </body>
 </html>
