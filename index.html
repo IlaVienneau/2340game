@@ -2,10 +2,21 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title></title>
     </head>
     <body>
-        <h1>SpaceTrader</h1>
-        <a href="newGame.html">New Game</a>
+        <div class="parent">
+            <div class="container" >
+                <h1>SpaceTrader</h1>
+                <button onclick="onClick()">New Game</a>
+                <script>
+                    function onClick() {
+                        window.location.replace("newGame.html");
+                        return;
+                    }
+                </script>
+            </div>
+        </div>
     </body>
 </html>

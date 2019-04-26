@@ -2,30 +2,35 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <title></title>
     </head>
     <body>
-        <h1>Player Created!</h1>
-        <br>
-        <p>Player Name: </p>
-        <p id="name"></p>
-        <br>
-        <p>Pilot Skill: </p>
-        <p id="pilot"></p>
-        <br>
-        <p>Fighter Skill: </p>
-        <p id="fighter"></p>
-        <br>
-        <p>Trader Skill: </p>
-        <p id="trader"></p>
-        <br>
-        <p>Engineer Skill: </p>
-        <p id="engineer"></p>
-        <br>
-        <p>Difficulty: </p>
-        <p id="difficulty"></p>
-        <br>
-        <p>Ship: Gnat</p>
+        <div class="parent">
+            <div class="container">
+                <h1>Player Created!</h1>
+                <br>
+                <p>Player Name: </p>
+                <p id="name"></p>
+                <br>
+                <p>Pilot Skill: </p>
+                <p id="pilot"></p>
+                <br>
+                <p>Fighter Skill: </p>
+                <p id="fighter"></p>
+                <br>
+                <p>Trader Skill: </p>
+                <p id="trader"></p>
+                <br>
+                <p>Engineer Skill: </p>
+                <p id="engineer"></p>
+                <br>
+                <p>Difficulty: </p>
+                <p id="difficulty"></p>
+                <br>
+                <p>Ship: Gnat</p>
+            </div>
+        </div>
         <script>
             var player = JSON.parse(localStorage.getItem('player'));
             var name = player.name;

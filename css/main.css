@@ -1,0 +1,7 @@
+.container {
+    display: inline-block;
+}
+.parent {
+        text-align: center;
+        vertical-align: middle;
+}
