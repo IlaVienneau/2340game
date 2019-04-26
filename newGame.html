@@ -19,7 +19,6 @@
         <br>
         <h1>Engineer Skill:</h1>
         <input id="engineer_skill" type="number" name="engineer_skill" value="">
-
         <select id="difficulty" class="difficultyspinner" name="difficulty">
             <option value="Beginner">Beginner</option>
             <option value="Medium">Medium</option>
@@ -52,13 +51,11 @@
                     window.alert("You have not allocated all of your points! Make sure that your skills total to 16.");
                     return;
                 }
-
                 var player = {
                     name: name,
                     pilotSkill: pilotSkill,
                     fighterSkill: fighterSkill,
                     traderSkill: traderSkill,
-                    engineerSkill: engineerSkill
                     engineerSkill: engineerSkill,
                     diff: difficulty
                 }
