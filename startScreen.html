@@ -30,7 +30,7 @@
                 <br>
                 <p>Ship: Gnat</p>
                 <br>
-                <button onclick="nextPage()">Create Universe</a>
+                <button type="submit" name="create" onclick="createUniverse()">Create Universe</button>
             </div>
         </div>
         <script>
@@ -52,10 +52,10 @@
             }
         </script>
 
-        <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
+
 
         <script>
-            function createPlayer() {
+            function createUniverse() {
                 var res = ["NOSPECIALRESOURCES", "MINERALRICH",
                 "MINERALPOOR", "DESERT", "LOTSOFWATER", "RICHSOIL", "POORSOIL",
                 "RICHFAUNA", "LIFELESS", "WEIRDMUSHROOMS", "LOTSOFHERBS",
