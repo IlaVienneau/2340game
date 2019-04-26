@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Player Created!</h1>
+        <br>
+        <p>Player Name: </p>
+        <p id="name"></p>
+        <br>
+        <p>Pilot Skill: </p>
+        <p id="pilot"></p>
+        <br>
+        <p>Fighter Skill: </p>
+        <p id="fighter"></p>
+        <br>
+        <p>Trader Skill: </p>
+        <p id="trader"></p>
+        <br>
+        <p>Engineer Skill: </p>
+        <p id="engineer"></p>
+        <br>
+        <p>Ship: Gnat</p>
+        <script>
+            var player = JSON.parse(localStorage.getItem('player'));
+            var name = player.name;
+            var pilot = player.pilotSkill;
+            var fighter = player.fighterSkill;
+            var trader = player.traderSkill;
+            var engineer = player.engineerSkill;
+            document.getElementById("name").innerHTML = name;
+            document.getElementById("pilot").innerHTML = pilot;
+            document.getElementById("fighter").innerHTML = fighter;
+            document.getElementById("trader").innerHTML = trader;
+            document.getElementById("engineer").innerHTML = engineer;
+        </script>
+        <a href="universe.html">Create Universe</a>
+    </body>
+</html>
