@@ -33,6 +33,29 @@
                 <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
             </div>
         </div>
+        <h1>Player Name:</h1>
+        <input id="player_name" type="text" name="player_name" placeholder="Enter Name Here">
+        <br>
+        <h1>Pilot Skill:</h1>
+        <input id="pilot_skill" type="number" name="pilot_skill" value="">
+        <br>
+        <h1>Fighter Skill:</h1>
+        <input id="fighter_skill" type="number" name="fighter_skill" value="">
+        <br>
+        <h1>Trader Skill:</h1>
+        <input id="trader_skill" type="number" name="trader_skill" value="">
+        <br>
+        <h1>Engineer Skill:</h1>
+        <input id="engineer_skill" type="number" name="engineer_skill" value="">
+        <br>
+        <h1>Difficulty:</h1>
+        <select id="difficulty" class="difficultyspinner" name="difficulty">
+            <option value="Beginner">Beginner</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <h2>Ship Type: Gnat (Starter ship)</h2>
+        <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
 
         <script>
             function createPlayer() {
