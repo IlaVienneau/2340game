@@ -8,44 +8,107 @@
     <H1>Solar Systems:</H1>
     <H2>Ashley</H2>
         <H3>Location: [0,0]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res1"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec1"></p>
     <H2>Brayden</H2>
         <H3>Location: [0,5]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res2"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec2"></p>
     <H2>Caroline</H2>
         <H3>Location: [0,10]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res3"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec3"></p>
     <H2>Ila</H2>
         <H3>Location: [0,15]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res4"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec4"></p>
     <H2>Will</H2>
         <H3>Location: [0,20]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res5"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec5"></p>
     <H2>Yelhsa</H2>
         <H3>Location: [10,5]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res6"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec6"></p>
     <H2>Nedyarb</H2>
         <H3>Location: [10,0]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res7"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec7"></p>
     <H2>Enilorac</H2>
         <H3>Location: [10,5]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res8"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec8"></p>
     <H2>Ali</H2>
         <H3>Location: [10,15]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
+        <H3>Resource:</H3>
+        <p id="res9"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec9"></p>
     <H2>Lliw</H2>
         <H3>Location: [10,20]</H3>
-        <H3>Resource:  No Special Resources</H3>
-        <H3>Tech Level:  Pre-Agriculture</H3>
-    </script>
+        <H3>Resource:</H3>
+        <p id="res10"></p>
+        <H3>Tech Level:</H3>
+        <p id="tec10"></p>
+    <script>
+            var uni = JSON.parse(localStorage.getItem('universe'));
+            var tec1 = uni.tec1;
+            var res1 = uni.res1;
+            var tec2 = uni.tec2;
+            var res2 = uni.res2;
+            var tec3 = uni.tec3;
+            var res3 = uni.res3;
+            var tec4 = uni.tec4;
+            var res4 = uni.res4;
+            var tec5 = uni.tec5;
+            var res5 = uni.res5;
+            var tec6 = uni.tec6;
+            var res6 = uni.res6;
+            var tec7 = uni.tec7;
+            var res7 = uni.res7;
+            var tec8 = uni.tec8;
+            var res8 = uni.res8;
+            var tec9 = uni.tec9;
+            var res9 = uni.res9;
+            var tec10 = uni.tec10;
+            var res10 = uni.res10;
+            document.getElementById("tec1").innerHTML = tec1;
+            document.getElementById("res1").innerHTML = res1;
+            document.getElementById("tec2").innerHTML = tec2;
+            document.getElementById("res2").innerHTML = res2;
+            document.getElementById("tec3").innerHTML = tec3;
+            document.getElementById("res3").innerHTML = res3;
+            document.getElementById("tec4").innerHTML = tec4;
+            document.getElementById("res4").innerHTML = res4;
+            document.getElementById("tec5").innerHTML = tec5;
+            document.getElementById("res5").innerHTML = res5;
+            document.getElementById("tec6").innerHTML = tec6;
+            document.getElementById("res6").innerHTML = res6;
+            document.getElementById("tec7").innerHTML = tec7;
+            document.getElementById("res7").innerHTML = res7;
+            document.getElementById("tec8").innerHTML = tec8;
+            document.getElementById("res8").innerHTML = res8;
+            document.getElementById("tec9").innerHTML = tec9;
+            document.getElementById("res9").innerHTML = res9;
+            document.getElementById("tec10").innerHTML = tec10;
+            document.getElementById("res10").innerHTML = res10;
 
+
+        </script>
 </html>
