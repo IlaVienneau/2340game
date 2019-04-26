@@ -20,6 +20,16 @@
         <h1>Engineer Skill:</h1>
         <input id="engineer_skill" type="number" name="engineer_skill" value="">
         <br>
+<<<<<<< HEAD
+=======
+        <br>
+        <select id="difficulty" class="difficultyspinner" name="difficulty">
+            <option value="Beginner">Beginner</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <br>
+>>>>>>> d4684903e3858cc8dd36f041ce279bba14b2245c
         <h2>Ship Type: Gnat (Starter ship)</h2>
         <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
 
@@ -30,6 +40,10 @@
                 var fighterSkill = parseInt(document.getElementById("fighter_skill").value);
                 var traderSkill = parseInt(document.getElementById("trader_skill").value);
                 var engineerSkill = parseInt(document.getElementById("engineer_skill").value);
+<<<<<<< HEAD
+=======
+                var difficulty = document.getElementById("difficulty").value;
+>>>>>>> d4684903e3858cc8dd36f041ce279bba14b2245c
                 if (name == "") {
                     window.alert("You must input a name.")
                     return;
@@ -46,13 +60,21 @@
                     window.alert("You have not allocated all of your points! Make sure that your skills total to 16.");
                     return;
                 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d4684903e3858cc8dd36f041ce279bba14b2245c
                 var player = {
                     name: name,
                     pilotSkill: pilotSkill,
                     fighterSkill: fighterSkill,
                     traderSkill: traderSkill,
+<<<<<<< HEAD
                     engineerSkill: engineerSkill
+=======
+                    engineerSkill: engineerSkill,
+                    diff: difficulty
+>>>>>>> d4684903e3858cc8dd36f041ce279bba14b2245c
                 }
                 localStorage.setItem('player', JSON.stringify(player));
                 window.location.replace("startScreen.html");
