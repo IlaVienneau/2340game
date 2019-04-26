@@ -22,7 +22,6 @@
         <p>Engineer Skill: </p>
         <p id="engineer"></p>
         <br>
-        <br>
         <p>Difficulty: </p>
         <p id="difficulty"></p>
         <br>
@@ -42,6 +41,46 @@
             document.getElementById("engineer").innerHTML = engineer;
             document.getElementById("difficulty").innerHTML = difficulty;
         </script>
-        <a href="universe.html">Create Universe</a>
+
+        <button type="submit" name="create" onclick="createPlayer()">Create Player</button>
+
+        <script>
+            function createPlayer() {
+                var res = ["NOSPECIALRESOURCES", "MINERALRICH",
+                "MINERALPOOR", "DESERT", "LOTSOFWATER", "RICHSOIL", "POORSOIL",
+                "RICHFAUNA", "LIFELESS", "WEIRDMUSHROOMS", "LOTSOFHERBS",
+                "ARTISTIC", "WARLIKE"];
+                var tec = ["Pre-Agriculture", "Agrigculture", "Medieval",
+                "Renaissance", "Early Industrial", "Industrial",
+                "Post-Industrial", "Hi-Tech"];
+                var maxRes = 13;
+                var maxTec = 8;
+            var uni = {
+                    tec1 : tec[Math.floor(Math.random() * maxTec)],
+                    res1 : res[Math.floor(Math.random() * maxRes)],
+                    tec2 : tec[Math.floor(Math.random() * maxTec)],
+                    res2 : res[Math.floor(Math.random() * maxRes)],
+                    tec3 : tec[Math.floor(Math.random() * maxTec)],
+                    res3 : res[Math.floor(Math.random() * maxRes)],
+                    tec4 : tec[Math.floor(Math.random() * maxTec)],
+                    res4 : res[Math.floor(Math.random() * maxRes)],
+                    tec5 : tec[Math.floor(Math.random() * maxTec)],
+                    res5 : res[Math.floor(Math.random() * maxRes)],
+                    tec6 : tec[Math.floor(Math.random() * maxTec)],
+                    res6 : res[Math.floor(Math.random() * maxRes)],
+                    tec7 : tec[Math.floor(Math.random() * maxTec)],
+                    res7 : res[Math.floor(Math.random() * maxRes)],
+                    tec8 : tec[Math.floor(Math.random() * maxTec)],
+                    res8 : res[Math.floor(Math.random() * maxRes)],
+                    tec9 : tec[Math.floor(Math.random() * maxTec)],
+                    res9 : res[Math.floor(Math.random() * maxRes)],
+                    tec10 : tec[Math.floor(Math.random() * maxTec)],
+                    res10 : res[Math.floor(Math.random() * maxRes)],
+                }
+                localStorage.setItem('universe', JSON.stringify(uni));
+                window.location.replace("universe.html");
+                return;
+            }
+        </script>
     </body>
 </html>
